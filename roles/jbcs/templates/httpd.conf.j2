@@ -57,7 +57,7 @@ AccessFileName .htaccess
     Require all denied
 </Files>
 
-TypesConfig "/etc/mime.types"
+TypesConfig "{{ httpd.home }}/httpd/conf/mime.types"
 
 <IfModule mod_mime_magic.c>
     MIMEMagicFile conf/magic
